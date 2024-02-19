@@ -7,8 +7,8 @@ class Program
         Console.WriteLine("Введите значения массива:");
         string input = Console.ReadLine();
 
-        string[] inputArray = input.Split(''); 
-        string[] resultArray = FilterArray(inoutArray);
+        string[] inputArray = input.Split(' '); 
+        string[] resultArray = FilterArray(inputArray);
 
         Console.WriteLine("Результат:");
 
@@ -24,7 +24,7 @@ class Program
         int count = 0;
         foreach (string element in array)
         {
-            if (element.Lenght <= 3)
+            if (element.Length <= 3)
             {
                 count++;
             }
@@ -35,7 +35,7 @@ class Program
 
         foreach (string element in array)
         {
-            if (element.Lenght <= 3)
+            if (element.Length <= 3)
             {
                 resultArray[index] = element;
                 index++;
