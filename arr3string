@@ -33,7 +33,16 @@ class Program
         string[] resultArray = new string[count];
         int index = 0;
 
-       
+        foreach (string element in array)
+        {
+            if (element.Lenght <= 3)
+            {
+                resultArray[index] = element;
+                index++;
+            }
+        }
+        
+        return resultArray;
     }
 }
 
